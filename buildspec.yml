@@ -6,7 +6,7 @@ env:
     AWS_ACCOUNT_ID: '932589472370'
     IMAGE_REPO_NAME: myapp-ecr
     IMAGE_TAG: latest
-    
+
 phases:
   install:
     commands:
@@ -25,6 +25,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - mvn clean package
       - echo Building the Docker image...
       - 'docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .'
       - >-
