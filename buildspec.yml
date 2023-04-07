@@ -6,8 +6,7 @@ env:
     AWS_ACCOUNT_ID: '932589472370'
     IMAGE_REPO_NAME: myapp-ecr
     IMAGE_TAG: latest
-  parameter-store:
-    LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword
+    
 phases:
   install:
     commands:
