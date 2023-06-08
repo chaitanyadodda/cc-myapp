@@ -1,9 +1,9 @@
 variable "region" {
-  default = "us-east-2"
+  default = "ap-south-1"
 }
 
 variable "image_id" {
-  default = "ami-024e6efaf93d85776"  # AMI from Base VM Image
+  default = "ami-0f5ee92e2d63afc18"  # AMI from Base VM Image
 }
 
 variable "instance_type" {
